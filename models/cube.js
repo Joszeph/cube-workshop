@@ -9,7 +9,7 @@ constructor(name, description, imageUrl, difficulty){
     this.imageUrl = imageUrl
     this.difficulty = difficulty
 }
-    save(){
+    save(callback){
         const newCube={
             id:this.id,
             name: this.name,
@@ -17,7 +17,7 @@ constructor(name, description, imageUrl, difficulty){
             imageUrl : this.imageUrl,
             difficulty: this.difficulty
         }
-    saveCube(newCube)
+    saveCube(newCube, callback)
     }
 }
 
